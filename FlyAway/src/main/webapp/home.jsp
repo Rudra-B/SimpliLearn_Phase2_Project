@@ -7,8 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2 align=center>Welcome to FlyAway</h2>
-
+<jsp:include page="component/header.jsp"></jsp:include>
+<br>
+<br>
 <form action="home" method="get">
 	
 <table  cellspacing=2 cellpadding=4>

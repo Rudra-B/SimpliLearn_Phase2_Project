@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+<jsp:include page="component/header.jsp"></jsp:include>
+<br>
+<br>
 <h3>Flight Booked Successfully</h3>
 
 <%

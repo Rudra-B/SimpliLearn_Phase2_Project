@@ -8,10 +8,12 @@
 <title>Insert title here</title>
 </head>
 <body>
+<jsp:include page="component/header.jsp"></jsp:include>
+<br>
 
 <%Flight flight=(Flight)request.getAttribute("flight"); %>
 <h2 align="center">Flight Details</h2>
-<table align="center" cellspacing=20>
+<table align="center" cellspacing=10>
 <tr><td>Airline Name</td><td><b><%=flight.getAirline() %></b></td></tr>
 <tr><td>Source</td><td><b><%=flight.getSource() %></b></td></tr>
 <tr><td>Destination</td><td><b><%=flight.getDestination() %></b></td></tr>

@@ -39,11 +39,20 @@ public class HomeController extends HttpServlet {
 		
 		
 
-		list=(ArrayList) flightdetails.getFlights(source,destination,date);
+		if(source.equals("") || source.equals(null) || destination.equals("") || destination.equals(null)|| date.equals(null)||date.equals(""))
+		{
+			request.getRequestDispatcher("home.jsp").forward(request, response);
+		}
+		else
+		{
+			list=(ArrayList) flightdetails.getFlights(source,destination,date);
 
-		request.setAttribute("list", list);
-		RequestDispatcher rd = request.getRequestDispatcher("Flight.jsp");
-		rd.forward(request, response);
+			request.setAttribute("list", list);
+			RequestDispatcher rd = request.getRequestDispatcher("Flight.jsp");
+			rd.forward(request, response);
+			
+		}
+		
 	}
 
 }

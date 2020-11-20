@@ -51,12 +51,11 @@ public class FlightDetailsDao {
 		Session session=sessionFactory.getCurrentSession();
 		Transaction t = session.beginTransaction();
 		List<Flight> flightlist=new ArrayList<>();
-		System.out.println("getFlights is calling");
+		
 		flightlist=session.createQuery("From Flight where source1 = '"+source+"' and destination = '"+destination+"' and date1 = '"+date+"'").getResultList();
 		t.commit();
 		session.close();
 	
-		//SessionFactoryObj.sessionfactory().close();
 		
 		
 		return flightlist;

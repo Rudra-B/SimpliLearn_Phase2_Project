@@ -11,11 +11,14 @@
 
 <%Flight flight=(Flight)request.getAttribute("flight"); %>
 <h2 align="center">Flight Details</h2>
-<table align="center">
-<tr><td><b><%=flight.getAirline() %></b></td></tr>
-<tr><td><b><%=flight.getSource() %></b></td><td><b>To</b></td><td><b><%=flight.getDestination() %></b></td></tr>
-<tr><td><b><%=flight.getDate() %></b></td></tr>
-<tr><td><b><%=flight.getPrice() %></b></td></tr>
+<table align="center" cellspacing=20>
+<tr><td>Airline Name</td><td><b><%=flight.getAirline() %></b></td></tr>
+<tr><td>Source</td><td><b><%=flight.getSource() %></b></td></tr>
+<tr><td>Destination</td><td><b><%=flight.getDestination() %></b></td></tr>
+<tr><td>Flight Date</td><td><b><%=flight.getDate() %></b></td></tr>
+<tr><td>Departure</td><td><b><%=flight.getDeparture() %></b></td></tr>
+<tr><td>Arrival</td><td><b><%=flight.getArrival() %></b></td></tr>
+<tr><td>Price</td><td><b><%=flight.getPrice() %></b></td></tr>
 </table>
 
 

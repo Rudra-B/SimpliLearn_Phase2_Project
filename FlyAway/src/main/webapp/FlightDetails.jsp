@@ -28,16 +28,16 @@
 <form action="Book" method="get">
 <h3 align="center">Enter Traveller details</h3>
 <table align="center">
-<tr><td>First Name</td><td><input type="text" name="firstname"></td></tr>
-<tr><td>Last Name</td><td><input type="text" name="lastname"></td></tr>
+<tr><td>First Name</td><td><input type="text" maxlength=20 name="firstname"></td></tr>
+<tr><td>Last Name</td><td><input type="text" maxlength=20 name="lastname"></td></tr>
 </table>
 
 <br>
 <h3 align="center">Enter Contact Details</h3>
 
 <table align="center">
-<tr><td>Mobile Number</td><td><input type="number" name="mobile"></td></tr>
-<tr><td>Email</td><td><input type="text" name="email"></td></tr>
+<tr><td>Mobile Number</td><td><input type="text" maxlength=20 name="mobile"></td></tr>
+<tr><td>Email</td><td><input type="text" maxlength=20 name="email"></td></tr>
 </table>
 
 

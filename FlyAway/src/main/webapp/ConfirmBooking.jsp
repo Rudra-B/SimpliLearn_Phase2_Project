@@ -10,7 +10,7 @@
 <jsp:include page="component/header.jsp"></jsp:include>
 <br>
 <br>
-<h3>Flight Booked Successfully</h3>
+<h3 align="center">Flight Booked Successfully</h3>
 
 <%
 
